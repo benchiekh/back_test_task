@@ -422,7 +422,6 @@ export interface ApiTaskTask extends Struct.CollectionTypeSchema {
   };
   attributes: {
     admin_user: Schema.Attribute.Relation<'oneToOne', 'admin::user'>;
-    colorCode: Schema.Attribute.String;
     completedAt: Schema.Attribute.Date;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -432,7 +431,6 @@ export interface ApiTaskTask extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::task.task'> &
       Schema.Attribute.Private;
-    notes: Schema.Attribute.String;
     priority: Schema.Attribute.Enumeration<['low', 'medium', 'high']>;
     publishedAt: Schema.Attribute.DateTime;
     taskStatus: Schema.Attribute.Enumeration<['pending', 'completed']>;

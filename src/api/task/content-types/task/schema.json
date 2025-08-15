@@ -38,12 +38,6 @@
         "high"
       ]
     },
-    "colorCode": {
-      "type": "string"
-    },
-    "notes": {
-      "type": "string"
-    },
     "admin_user": {
       "type": "relation",
       "relation": "oneToOne",
