@@ -3,17 +3,18 @@ export default [
   'strapi::errors',
   'strapi::security',
   {
-    name: 'strapi::cors',
-    config: {
-      enabled: true,
-      origin: [
-        'https://front-test-task-6uwp.vercel.app',  
-        'http://localhost:3000',            
-      ],
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      headers: '*', // autorise tous les headers (ex: Authorization)
-    },
+  name: 'strapi::cors',
+  config: {
+    enabled: true,
+    origin: [
+      'https://front-test-task-6uwp-birteea6u-ihebs-projects-3647af1a.vercel.app',  
+      'http://localhost:3000',
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    headers: '*',
   },
+}
+,
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
