@@ -7,9 +7,11 @@ export default [
     config: {
       enabled: true,
       origin: [
-        'https://front-test-task-4mzy.vercel.app',  
+        'https://front-test-task-6uwp.vercel.app',  
         'http://localhost:3000',            
       ],
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      headers: '*', // autorise tous les headers (ex: Authorization)
     },
   },
   'strapi::poweredBy',
