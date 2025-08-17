@@ -1,4 +1,3 @@
-
 export default [
   'strapi::logger',
   'strapi::errors',
@@ -8,8 +7,8 @@ export default [
     config: {
       enabled: true,
       origin: [
-        'https://front-test-task-6uwp-3mr2msgue-ihebs-projects-3647af1a.vercel.app',
         'http://localhost:3000',
+        /\.vercel\.app$/,  // autorise tous les sous-domaines vercel.app
       ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       headers: '*',
