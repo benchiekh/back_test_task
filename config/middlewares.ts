@@ -6,10 +6,7 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: [
-        'http://localhost:3000',
-        /\.vercel\.app$/,  // autorise tous les sous-domaines vercel.app
-      ],
+      origin: ["*"],  // <-- accepte toutes les origines
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       headers: '*',
     },
